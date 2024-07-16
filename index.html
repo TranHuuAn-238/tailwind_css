@@ -14,28 +14,42 @@
     <link rel="stylesheet" href="./build/app.css">
 </head>
 
+<!-- npx tailwindcss -i css/tailwind.css -o build/tailwind.css --watch  : luôn nhớ chạy để build lại tailwind.css mỗi khi sửa -->
+<!-- text-[#ffa400] : sử dụng jit mode với [#ffa400] => viết thẳng css trong file html, không cần thêm thông qua tailwind.config.js nữa -->
+<!-- 
+    sm: 640px
+    md: 768px
+    lg: 1024px
+    xl: 1280px
+    2xl: 1536px
+ -->
+
 <body>
     <div class="pt-12">
-        <h1 class="text-center text-black text-4xl font-semibold mb-5">Live anywhere</h1>
-        <h2 class="text-center font-light text-xl text-gray-500 mb-10">Keep calm & travel on</h2>
-        <div class="grid grid-cols-3 gap-x-8 max-w-6xl mx-auto">
+        <h1 class="text-center text-[#ffa400] text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-5">
+            Live anywhere</h1>
+        <h2 class="text-center font-light text-xl text-[#07a787] mb-35">Keep calm & travel on</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-[37px] max-w-6xl mx-auto px-[15px] gap-y-7 lg:gap-y-0">
             <div>
                 <div class="h-96 mb-20">
-                    <img src="https://images.unsplash.com/photo-1720545525602-b3fcc473b32b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-full h-full rounded-lg object-cover">
+                    <img src="https://images.unsplash.com/photo-1720545525602-b3fcc473b32b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" class="w-full h-full rounded-lg object-cover">
                 </div>
                 <h3 class="text-center font-medium text-lg mb-3">Enjoy the great cold</h3>
                 <span class="block text-center text-gray-400 text-sm">6,789 properties</span>
             </div>
             <div>
                 <div class="h-96 mb-20">
-                    <img src="https://images.unsplash.com/photo-1720545525602-b3fcc473b32b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-full h-full rounded-lg object-cover">
+                    <img src="https://images.unsplash.com/photo-1720545525602-b3fcc473b32b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" class="w-full h-full rounded-lg object-cover">
                 </div>
                 <h3 class="text-center font-medium text-lg mb-3">Enjoy the great cold</h3>
                 <span class="block text-center text-gray-400 text-sm">6,789 properties</span>
             </div>
             <div>
                 <div class="h-96 mb-20">
-                    <img src="https://images.unsplash.com/photo-1720545525602-b3fcc473b32b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-full h-full rounded-lg object-cover">
+                    <img src="https://images.unsplash.com/photo-1720545525602-b3fcc473b32b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" class="w-full h-full rounded-lg object-cover">
                 </div>
                 <h3 class="text-center font-medium text-lg mb-3">Enjoy the great cold</h3>
                 <span class="block text-center text-gray-400 text-sm">6,789 properties</span>
