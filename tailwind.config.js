@@ -10,11 +10,16 @@ module.exports = {
     extend: {
       spacing: {
         35: "35px",
-      }
+      },
+      colors: {
+        gray33: "#333",
+        orangefa: "#ffa400",
+      },
     },
-    colors: {
-      gray33: "#333",
-      orangefa: "#ffa400",
+  },
+  variants: {
+    extend: {
+      backgroundColor: ["odd"],
     },
   },
   plugins: [],
