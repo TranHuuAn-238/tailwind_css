@@ -60,7 +60,7 @@
     </div> -->
 
     <!-- breakpoint:hover:class -->
-    <!-- tuong tac tu ngoai vao trong (tuong tac voi cha de anh huong toi con) 
+    <!-- tuong tac tu ngoai vao trong (tuong tac voi cha cung anh huong toi con) 
         parent: group 
         child: breakpoint:group-hover:class 
     -->
@@ -79,10 +79,54 @@
         <li class="odd:bg-red-500"></li>
     </ul> -->
 
-    <div before=""
+    <!-- <div before=""
         class="w-10 h-10 flex items-center justify-center text-[#00eafd] mx-auto my-5 rounded-xl relative before:content-[attr(before)] before:absolute before:inset-0 before:rounded-xl before:bg-current before:opacity-25">
         <ion-icon name="barbell-outline"></ion-icon>
+    </div> -->
+
+    <!-- Dark mode -->
+    <label for="toggle" class=" inline-block cursor-pointer toggle-switch">
+        <input type="checkbox" name="" id="toggle" class="darkmode-input hidden">
+        <div
+            class="w-[100px] h-[40px] border border-[#ccc] rounded-full fixed right-5 bottom-5 z-50 p-[5px] transition-colors">
+            <div class="w-7 h-7 bg-[#ccc] rounded-full transition-transform darkmode-spinner"></div>
+        </div>
+    </label>
+    <div class="mx-auto max-w-[1200px] grid grid-cols-4 gap-x-5 p-5">
+        <div class="px-5 py-8 rounded-lg border border-[#eee] text-center bg-white dark:bg-[#0F0D58]">
+            <img src="https://free3dicon.com/wp-content/uploads/2022/11/perspective_matte-1-264x264.png" alt=""
+                class="mb-5 max-w-[100px] mx-auto">
+            <h3 class="text-lg font-semibold mb-6 text-[#0F0D58] dark:text-white">
+                Recommendation
+            </h3>
+            <div class="text-sm leading-loose text-[#9191B4] font-normal dark:text-white">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore laudantium cumque soluta voluptate
+                ipsa voluptas ab commodi illum enim aspernatur ad a explicabo, perferendis autem quisquam libero dolor?
+                Quaerat, accusantium!
+            </div>
+        </div>
     </div>
+    <script>
+        const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            document.documentElement.setAttribute('class', currentTheme);
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        }
+        function switchTheme(e) {
+            if (e.target.checked) {
+                //  document.documentElement la the <html>
+                document.documentElement.setAttribute('class', 'dark');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('class', 'light');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+        toggleSwitch.addEventListener('change', switchTheme);
+    </script>
 </body>
 
 </html>

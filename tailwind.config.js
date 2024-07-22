@@ -6,6 +6,7 @@ module.exports = {
     './**/*.html',
     './**/*.{js,jsx,ts,tsx,vue}',
   ],
+  darkMode: "class",
   theme: {
     extend: {
       spacing: {
