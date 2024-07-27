@@ -1,4 +1,5 @@
 body {
+    /* khi su dung tailwind ko nen reset css o day, ma nen them base style o css\tailwind.css */
     font-family: "Poppins", sans-serif;
 }
 

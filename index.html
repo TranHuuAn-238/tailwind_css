@@ -7,13 +7,12 @@
     <title>TailwindCSS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="./build/tailwind.css">
-    <link rel="stylesheet" href="./build/app.css">
+    <!-- <link rel="stylesheet" href="./build/app.css"> -->
 </head>
 
 <!-- npx tailwindcss -i css/tailwind.css -o build/tailwind.css --watch  : luôn nhớ chạy để build lại tailwind.css mỗi khi sửa -->
@@ -26,7 +25,7 @@
     2xl: 1536px
  -->
 
-<body>
+<body class="p-5">
     <!-- <div class="pt-12">
         <h1 class="text-center text-[#ffa400] text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-5">
             Live anywhere</h1>
@@ -85,7 +84,7 @@
     </div> -->
 
     <!-- Dark mode -->
-    <label for="toggle" class=" inline-block cursor-pointer toggle-switch">
+    <!-- <label for="toggle" class=" inline-block cursor-pointer toggle-switch">
         <input type="checkbox" name="" id="toggle" class="darkmode-input hidden">
         <div
             class="w-[100px] h-[40px] border border-[#ccc] rounded-full fixed right-5 bottom-5 z-50 p-[5px] transition-colors">
@@ -105,7 +104,36 @@
                 Quaerat, accusantium!
             </div>
         </div>
+    </div> -->
+
+    <!-- <div class="max-w-[1140px] mx-auto flex items-center">
+        <div class="w-full max-w-[555px]">
+            <h1 class="text-[#0B132A] text-[50px] font-medium mb-5">Want anything to be easy with <strong>LaslesVPN.</strong></h1>
+            <p class="text-[#4F5665] mb-[50px]">
+                Provide a network for all your needs with ease and fun using <strong>LaslesVPN</strong> discover interesting features from us.
+            </p>
+            <a href="#" class="inline-block text-white font-bold p-4 w-full max-w-[250px] bg-[#F53838] rounded-[10px] text-center">Get Started</a>
+        </div>
+        <div class="pl-10">
+            <img src="https://fastly.picsum.photos/id/880/200/300.jpg?hmac=dShSJOHRB--zjrqofJOm33xe4Cylybn00N77ewnaS2g" alt="">
+        </div>
+    </div> -->
+    
+    <div class="grid-layout">
+        <div class="h-[200px] scroll-snap-start">
+            <img src="https://fastly.picsum.photos/id/743/400/500.jpg?hmac=g6IeuIteMCUlPhLQ9Eu5OldXTATKAucbVWQVQ2fyXio" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="h-[200px] scroll-snap-start">
+            <img src="https://fastly.picsum.photos/id/743/400/500.jpg?hmac=g6IeuIteMCUlPhLQ9Eu5OldXTATKAucbVWQVQ2fyXio" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="h-[200px] scroll-snap-start">
+            <img src="https://fastly.picsum.photos/id/743/400/500.jpg?hmac=g6IeuIteMCUlPhLQ9Eu5OldXTATKAucbVWQVQ2fyXio" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="h-[200px] scroll-snap-start">
+            <img src="https://fastly.picsum.photos/id/743/400/500.jpg?hmac=g6IeuIteMCUlPhLQ9Eu5OldXTATKAucbVWQVQ2fyXio" alt="" class="w-full h-full object-cover">
+        </div>
     </div>
+
     <script>
         const toggleSwitch = document.querySelector('.toggle-switch input[type="checkbox"]');
         const currentTheme = localStorage.getItem('theme');
