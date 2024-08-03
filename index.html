@@ -7,10 +7,27 @@
     <title>TailwindCSS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        grayDark: "#020005",
+                        grayDark2: "#131528",
+                        grayb1: "#B1B5C1",
+                        primary: "#1E50FF"
+                    },
+                    fontFamily: {
+                        sans: ["Space Grotesk", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="./build/tailwind.css">
     <!-- <link rel="stylesheet" href="./build/app.css"> -->
 </head>
@@ -25,7 +42,7 @@
     2xl: 1536px
  -->
 
-<body class="p-5">
+<body class="p-5 bg-grayDark text-white font-sans text-base font-normal leading-normal">
     <!-- <div class="pt-12">
         <h1 class="text-center text-[#ffa400] text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-5">
             Live anywhere</h1>
@@ -118,19 +135,88 @@
             <img src="https://fastly.picsum.photos/id/880/200/300.jpg?hmac=dShSJOHRB--zjrqofJOm33xe4Cylybn00N77ewnaS2g" alt="">
         </div>
     </div> -->
-    
-    <div class="grid-layout">
+
+    <!-- <div class="grid-layout">
         <div class="h-[200px] scroll-snap-start">
-            <img src="https://fastly.picsum.photos/id/743/400/500.jpg?hmac=g6IeuIteMCUlPhLQ9Eu5OldXTATKAucbVWQVQ2fyXio" alt="" class="w-full h-full object-cover">
+            <img src="https://fastly.picsum.photos/id/743/400/500.jpg?hmac=g6IeuIteMCUlPhLQ9Eu5OldXTATKAucbVWQVQ2fyXio"
+                alt="" class="w-full h-full object-cover">
         </div>
         <div class="h-[200px] scroll-snap-start">
-            <img src="https://fastly.picsum.photos/id/743/400/500.jpg?hmac=g6IeuIteMCUlPhLQ9Eu5OldXTATKAucbVWQVQ2fyXio" alt="" class="w-full h-full object-cover">
+            <img src="https://fastly.picsum.photos/id/743/400/500.jpg?hmac=g6IeuIteMCUlPhLQ9Eu5OldXTATKAucbVWQVQ2fyXio"
+                alt="" class="w-full h-full object-cover">
         </div>
         <div class="h-[200px] scroll-snap-start">
-            <img src="https://fastly.picsum.photos/id/743/400/500.jpg?hmac=g6IeuIteMCUlPhLQ9Eu5OldXTATKAucbVWQVQ2fyXio" alt="" class="w-full h-full object-cover">
+            <img src="https://fastly.picsum.photos/id/743/400/500.jpg?hmac=g6IeuIteMCUlPhLQ9Eu5OldXTATKAucbVWQVQ2fyXio"
+                alt="" class="w-full h-full object-cover">
         </div>
         <div class="h-[200px] scroll-snap-start">
-            <img src="https://fastly.picsum.photos/id/743/400/500.jpg?hmac=g6IeuIteMCUlPhLQ9Eu5OldXTATKAucbVWQVQ2fyXio" alt="" class="w-full h-full object-cover">
+            <img src="https://fastly.picsum.photos/id/743/400/500.jpg?hmac=g6IeuIteMCUlPhLQ9Eu5OldXTATKAucbVWQVQ2fyXio"
+                alt="" class="w-full h-full object-cover">
+        </div>
+    </div> -->
+
+    <div class="w-full max-w-[1170px] px-5 py-5 mx-auto">
+        <div class="grid grid-cols-3 gap-[30px]">
+            <div class="bg-grayDark2 p-5 rounded-xl">
+                <div class="w-full h-[330px] mb-5">
+                    <img srcset="https://fastly.picsum.photos/id/376/400/500.jpg?hmac=qBwP9xYtHOPnKRjKREdiL9i-NLvQjnd4f4W-TqcZ87I 2x"
+                        class="w-full h-full object-cover rounded-xl" alt="">
+                </div>
+                <h3 class="text-white font-bold text-[22px]">MutantApeYachtClub</h3>
+                <div class="text-grayb1">Created by <a href="#" class="text-primary mb-4">0xa858d...2ef1</a>
+                </div>
+                <div class="flex items-start justify-between mb-10">
+                    <div class="flex flex-col items-start">
+                        <span class="text-sm text-grayb1">Current Bid</span>
+                            <span class="text-lg font-semibold text-white">1.0324 ETH</span>
+                    </div>
+                    <div class="flex flex-col items-end">
+                        <span class="text-sm text-grayb1">Remaining Time</span>
+                            <span class="text-lg font-semibold text-white">12 : 03 : 44</span>
+                    </div>
+                </div>
+                <button class="bg-primary text-white font-semibold text-lg w-full p-4 rounded-md">Collect Now</button>
+            </div>
+            <div class="bg-grayDark2 p-5 rounded-xl">
+                <div class="w-full h-[330px] mb-5">
+                    <img srcset="https://fastly.picsum.photos/id/376/400/500.jpg?hmac=qBwP9xYtHOPnKRjKREdiL9i-NLvQjnd4f4W-TqcZ87I 2x"
+                        class="w-full h-full object-cover rounded-xl" alt="">
+                </div>
+                <h3 class="text-white font-bold text-[22px]">MutantApeYachtClub</h3>
+                <div class="text-grayb1">Created by <a href="#" class="text-primary mb-4">0xa858d...2ef1</a>
+                </div>
+                <div class="flex items-start justify-between mb-10">
+                    <div class="flex flex-col items-start">
+                        <span class="text-sm text-grayb1">Current Bid</span>
+                            <span class="text-lg font-semibold text-white">1.0324 ETH</span>
+                    </div>
+                    <div class="flex flex-col items-end">
+                        <span class="text-sm text-grayb1">Remaining Time</span>
+                            <span class="text-lg font-semibold text-white">12 : 03 : 44</span>
+                    </div>
+                </div>
+                <button class="bg-primary text-white font-semibold text-lg w-full p-4 rounded-md">Collect Now</button>
+            </div>
+            <div class="bg-grayDark2 p-5 rounded-xl">
+                <div class="w-full h-[330px] mb-5">
+                    <img srcset="https://fastly.picsum.photos/id/376/400/500.jpg?hmac=qBwP9xYtHOPnKRjKREdiL9i-NLvQjnd4f4W-TqcZ87I 2x"
+                        class="w-full h-full object-cover rounded-xl" alt="">
+                </div>
+                <h3 class="text-white font-bold text-[22px]">MutantApeYachtClub</h3>
+                <div class="text-grayb1">Created by <a href="#" class="text-primary mb-4">0xa858d...2ef1</a>
+                </div>
+                <div class="flex items-start justify-between mb-10">
+                    <div class="flex flex-col items-start">
+                        <span class="text-sm text-grayb1">Current Bid</span>
+                            <span class="text-lg font-semibold text-white">1.0324 ETH</span>
+                    </div>
+                    <div class="flex flex-col items-end">
+                        <span class="text-sm text-grayb1">Remaining Time</span>
+                            <span class="text-lg font-semibold text-white">12 : 03 : 44</span>
+                    </div>
+                </div>
+                <button class="bg-primary text-white font-semibold text-lg w-full p-4 rounded-md">Collect Now</button>
+            </div>
         </div>
     </div>
 
