@@ -757,6 +757,10 @@ body {
   margin-bottom: 1.25rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -767,6 +771,10 @@ body {
 
 .mb-35 {
   margin-bottom: 35px;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-5 {
@@ -900,6 +908,10 @@ body {
   height: 200px;
 }
 
+.h-\[330px\] {
+  height: 330px;
+}
+
 .h-\[40px\] {
   height: 40px;
 }
@@ -946,6 +958,10 @@ body {
 
 .max-w-\[1140px\] {
   max-width: 1140px;
+}
+
+.max-w-\[1170px\] {
+  max-width: 1170px;
 }
 
 .max-w-\[1200px\] {
@@ -1302,6 +1318,10 @@ body {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -1488,6 +1508,10 @@ body {
 
 .justify-items-stretch {
   justify-items: stretch;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
 }
 
 .gap-x-5 {
@@ -1832,6 +1856,10 @@ body {
   border-radius: 0.5rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -2126,6 +2154,16 @@ body {
   padding: 5px;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-1\.5 {
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -2149,6 +2187,11 @@ body {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .py-8 {
@@ -2220,8 +2263,21 @@ body {
   vertical-align: super;
 }
 
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-\[22px\] {
+  font-size: 22px;
+}
+
 .text-\[50px\] {
   font-size: 50px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -2329,6 +2385,10 @@ body {
 
 .leading-loose {
   line-height: 2;
+}
+
+.leading-normal {
+  line-height: 1.5;
 }
 
 .text-\[\#00eafd\] {
